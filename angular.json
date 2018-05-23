@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "devloggger": {
+    "devlogger": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/devloggger",
+            "outputPath": "dist/devlogger",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "devloggger:build"
+            "browserTarget": "devlogger:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "devloggger:build:production"
+              "browserTarget": "devlogger:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "devloggger:build"
+            "browserTarget": "devlogger:build"
           }
         },
         "test": {
@@ -88,7 +88,7 @@
         }
       }
     },
-    "devloggger-e2e": {
+    "devlogger-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -96,7 +96,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "devloggger:serve"
+            "devServerTarget": "devlogger:serve"
           }
         },
         "lint": {
@@ -109,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "devloggger"
+  "defaultProject": "devlogger"
 }
